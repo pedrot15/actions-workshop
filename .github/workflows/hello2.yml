@@ -1,0 +1,20 @@
+name: Hello World Training Workflow #2
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    env:
+      MY_ENV: "John Doe"
+    steps:
+      - name: Greet the User
+        run: echo "Hello World!"
+     
+
+      - name: Run a multi-line script
+        run: |
+          echo "Hello $MY_ENV"
+          echo "Hello $GITHUB_ACTOR"
