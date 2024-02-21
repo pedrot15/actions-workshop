@@ -1,4 +1,4 @@
-name: Hello World Training Workflow #2
+name: Hello World Training Workflow \#2
 
 on:
   workflow_dispatch:
