@@ -38,6 +38,7 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: davelosert/vitest-coverage-report-action@e93ba7d37d24899cc65c5525a1eefd89ae5cf365
       uses: davelosert/vitest-coverage-report-action@v2.2.1
+      if: always()
       with:
         vite-config-path: vite.config.ts
        
